@@ -21,8 +21,6 @@ const UnitSelector = ({
   label,
   className,
 }: UnitSelectorProps) => {
-  const unit = category.units.find((unit) => unit.name === value);
-
   return (
     <div className={className}>
       <Select value={value} onValueChange={onChange}>
