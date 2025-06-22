@@ -55,9 +55,9 @@ export const conversionCategories: Category[] = [
     icon: FlaskConical,
     baseUnit: "liter",
     units: [
-      { name: "Milliliter", symbol: "ml", ratio: 0.001 },
-      { name: "Centiliter", symbol: "cl", ratio: 0.01 },
-      { name: "Liter", symbol: "l", ratio: 1 },
+      { name: "Millilitre", symbol: "ml", ratio: 0.001 },
+      { name: "Centilitre", symbol: "cl", ratio: 0.01 },
+      { name: "Litre", symbol: "l", ratio: 1 },
       { name: "Cubic meter", symbol: "m³", ratio: 1000 },
       { name: "US Fluid Ounce", symbol: "fl oz", ratio: 0.0295735295625 },
       { name: "US Cup", symbol: "cup", ratio: 0.2365882365 },
