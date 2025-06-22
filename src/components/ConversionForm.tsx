@@ -1,11 +1,11 @@
-import { CopyButton } from "@/components/CopyButton";
+import CopyButton from "@/components/CopyButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import UnitSelector from "@/components/UnitSelector";
 import { convert, formatNumber } from "@/lib/ConversionUtils";
 import { ArrowDownUp } from "lucide-react";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { Button } from "./ui/button";
 
 const ConversionForm = ({ category }: { category: Category }) => {
@@ -135,4 +135,4 @@ const ConversionForm = ({ category }: { category: Category }) => {
   );
 };
 
-export default ConversionForm;
+export default memo(ConversionForm);

@@ -2,7 +2,7 @@ import "@/App.css";
 import CategoryTabs from "@/components/CategoryTabs";
 import ConversionForm from "@/components/ConversionForm";
 import { conversionCategories } from "@/lib/ConversionCategories";
-import { useState } from "react";
+import { memo, useState } from "react";
 
 function App() {
   const [activeCategory, setActiveCategory] = useState<string>(
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);

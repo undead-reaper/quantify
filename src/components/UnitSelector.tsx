@@ -5,6 +5,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { memo } from "react";
 
 interface UnitSelectorProps {
   category: Category;
@@ -50,4 +51,4 @@ const UnitSelector = ({
   );
 };
 
-export default UnitSelector;
+export default memo(UnitSelector);

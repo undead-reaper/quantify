@@ -1,5 +1,5 @@
 import App from "@/App.tsx";
-import { ThemeProvider } from "@/components/ThemeProvider.tsx";
+import ThemeProvider from "@/components/ThemeProvider.tsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 

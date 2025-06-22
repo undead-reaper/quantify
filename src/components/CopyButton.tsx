@@ -7,14 +7,14 @@ import {
 } from "@/components/ui/tooltip";
 import { Check, Copy } from "lucide-react";
 import { motion } from "motion/react";
-import { useState } from "react";
+import { memo, useState } from "react";
 
 interface CopyButtonProps {
   value: string;
   className?: string;
 }
 
-export function CopyButton({ value, className }: CopyButtonProps) {
+function CopyButton({ value, className }: CopyButtonProps) {
   const [hasCopied, setHasCopied] = useState(false);
 
   const copyToClipboard = async () => {
@@ -61,3 +61,5 @@ export function CopyButton({ value, className }: CopyButtonProps) {
     </TooltipProvider>
   );
 }
+
+export default memo(CopyButton);

@@ -1,6 +1,7 @@
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { conversionCategories } from "@/lib/ConversionCategories";
 import { cn } from "@/lib/utils";
+import { memo } from "react";
 
 interface CategoryTabsProps {
   activeCategory: string;
@@ -37,4 +38,4 @@ const CategoryTabs = ({
   );
 };
 
-export default CategoryTabs;
+export default memo(CategoryTabs);
