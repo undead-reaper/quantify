@@ -19,7 +19,7 @@ const CategoryTabs = ({
       onValueChange={onChange}
       className={cn("w-full h-min", className)}
     >
-      <TabsList className="grid grid-cols-4 sm:grid-cols-8 mb-6 gap-1 w-full bg-none h-min">
+      <TabsList className="grid grid-cols-4 sm:grid-cols-8 mb-6 gap-1 w-full bg-transparent h-min">
         {conversionCategories.map((category) => {
           return (
             <TabsTrigger
